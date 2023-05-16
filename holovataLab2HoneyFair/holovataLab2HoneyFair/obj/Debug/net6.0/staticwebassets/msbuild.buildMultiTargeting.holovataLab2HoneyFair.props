@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\build\holovataLab2HoneyFair.props" />
+</Project>

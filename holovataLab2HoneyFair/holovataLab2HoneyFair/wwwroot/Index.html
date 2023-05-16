@@ -1,0 +1,40 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Informatics-2023-Lab2 Honey Fair</title>
+    <link rel="stylesheet" href="css/site.css" />
+</head>
+<body>
+    <h1>Informatics-2023-Lab2 Honey Fair</h1>
+    <h3>Add Fair Location</h3>
+    <form action="javascript:void(0);" method="POST" onsubmit="addFairLocation()">
+        <input type="text" id="add-city" placeholder="New Fair Location City">
+        <input type="text" id="add-address" placeholder="New Fair Location Address">
+        <input type="submit" value="Add">
+    </form>
+    <div id="editFairLocation">
+        <h3>Edit</h3>
+        <form action="javascript:void(0);" onsubmit="updateFairLocation()">
+            <input type="hidden" id="edit-id">
+            <input type="text" id="edit-city">
+            <input type="text" id="edit-address">
+            <input type="submit" value="Save">
+            <a onclick="closeInput()" aria-label="Close">&#10006;</a>
+        </form>
+    </div>
+    <p id="counter"></p>
+    <table>
+        <tr>
+            <th>City</th>
+            <th>Address</th>
+        </tr>
+        <tbody id="fairLocations"></tbody>
+    </table>
+    <script src="js/lab2.js" asp-append-version="true"></script>
+
+    <script type="text/javascript">
+        getFairLocations();
+    </script>
+</body>
+</html>

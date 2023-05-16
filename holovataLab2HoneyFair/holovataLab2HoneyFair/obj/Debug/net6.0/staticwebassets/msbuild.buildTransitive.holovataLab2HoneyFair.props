@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\buildMultiTargeting\holovataLab2HoneyFair.props" />
+</Project>
